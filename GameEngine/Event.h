@@ -12,7 +12,7 @@ namespace GameEngine {
 	{
 		None = 0, 
 		WindowClose, WindowResize, WindowFocus, WindowLostFocus, WindowMoved,
-		AppTock, AppUpdate, AppRender, 
+		AppTick, AppUpdate, AppRender, 
 		KeyPressed, KeyReleased,
 		MouseButtonPressed, MouseButtonReleased, MouseMoved, MouseScrolled
 	};

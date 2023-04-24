@@ -70,6 +70,15 @@ namespace GameEngine
 	class HAZEL_API MouseButtonReleasedEvent : public MouseButtonEvent
 	{
 	public:
-		MouseButtonReleasedEvent(int button): MouseButtonEvent(button) {}
+		MouseButtonReleasedEvent(int button)
+			: MouseButtonEvent(button) { }
+		std::string ToString() const override
+		{
+			std::stringstream ss;
+			ss << "MouseButtonReleaseEvent: " << m_Button;
+			return ss.str();
+		}
+
+		EVENT_CLASS_TYPE(MouseButtonReleased)
 	};
 }

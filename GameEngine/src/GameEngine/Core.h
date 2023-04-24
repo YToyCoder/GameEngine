@@ -12,3 +12,5 @@ namespace GameEngine {
 #else 
 #error Hazel only support windows
 #endif
+
+#define Bit(x) (1 << x)
